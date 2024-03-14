@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import Profile from '../../assets/images/Profile Pic.jpg';
 import './index.scss'
 
 const Home = () => {
