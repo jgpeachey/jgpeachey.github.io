@@ -1,14 +1,32 @@
 import { Link } from 'react-router-dom';
 import './index.scss'
+import { useState } from 'react';
+import AnimatedLetters from '../AnimatedLetters';
 
 const Home = () => {
+    const {letterClass} = useState('text-animate')
+    const nameArray = [' ', 'J', 'o', 'h', 'n', ' ', 'P', 'e', 'a', 'c', 'h', 'e', 'y']
+    const jobArray = ['S', 'o', 'f', 't', 'w', 'a', 'r', 'e', ' ', 'E', 'n', 'g', 'i', 'n', 'e', 'e', 'r',]
+
     return (
         <div className="container home-page">
             <div className="text-zone">
                 <h1>
-                    Hi, <br /> I'm
-                    John Peachey <br />
-                    Software Engineer
+                    <span className={letterClass}>H</span>
+                    <span className={`${letterClass} _12`}>i,</span>
+                    <br /> 
+                    <span className={`${letterClass} _13`}>I</span>
+                    <span className={`${letterClass} _14`}>'m</span>
+                    <AnimatedLetters letterClass={letterClass}
+                        strArray={nameArray}
+                        idx={15}
+                    /> 
+                    <br />
+                    <AnimatedLetters
+                        letterClass={letterClass}
+                        strArray={jobArray}
+                        idx={28} //end at 44
+                    />
                 </h1>
                 <h2>
                     Welcome to my Website! <br />
