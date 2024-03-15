@@ -1,12 +1,18 @@
 import { Link } from 'react-router-dom';
 import './index.scss'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 
 const Home = () => {
-    const {letterClass} = useState('text-animate')
+    const [letterClass, setLetterClass] = useState('text-animate')
     const nameArray = [' ', 'J', 'o', 'h', 'n', ' ', 'P', 'e', 'a', 'c', 'h', 'e', 'y']
     const jobArray = ['S', 'o', 'f', 't', 'w', 'a', 'r', 'e', ' ', 'E', 'n', 'g', 'i', 'n', 'e', 'e', 'r',]
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLetterClass('text-animate-hover')
+        }, 4000)
+    }, [])
 
     return (
         <div className="container home-page">

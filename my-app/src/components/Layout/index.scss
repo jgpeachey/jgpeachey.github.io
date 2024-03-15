@@ -5,7 +5,7 @@
 }
 
 .container {
-    width: 60%;
+    width: 100%;
     will-change: contents;
     height: 90%;
     min-height: 566px;
@@ -61,6 +61,12 @@
             &:nth-of-type(3) {
                 animation-delay: 1.3s;
             }
+        }
+    }
+
+    .text-animate-hover {
+        &:hover {
+            color: #fff;
         }
     }
 }
