@@ -20,7 +20,7 @@ const About = () => {
                         />
                     </h1>
                     <p>
-                        I'm a highly motivated and recent University of 
+                        I'm a highly motivated recent University of 
                         Central Florida Computer Science graduate with a 
                         passion for solving complex problems through 
                         innovative software solutions. During my academic 
@@ -66,10 +66,10 @@ const About = () => {
                             <FontAwesomeIcon icon={faReact} color='#5ED4F4' />
                         </div>
                         <div className='face5'>
-                            <FontAwesomeIcon icon={faJsSquare} color='#EFD81D' />
+                            <FontAwesomeIcon icon={faGithub} color='#c0c0c0' />
                         </div>
                         <div className='face6'>
-                            <FontAwesomeIcon icon={faGithub} color='#c0c0c0' />
+                            <FontAwesomeIcon icon={faJsSquare} color='#EFD81D' />
                         </div>
                     </div>
                 </div>
