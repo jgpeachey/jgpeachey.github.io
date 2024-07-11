@@ -66,5 +66,12 @@
         border: 1px solid #ff9100;
         float: right;
         border-radius: 4px;
+
+        &:hover {
+            background: #ff9100;
+            color: #333;
+            font-weight: 600;
+            cursor: pointer;
+        }
     }
 }
